@@ -6,6 +6,7 @@ let app = app || {};
   let productionApiUrl = 'https://fellow-code.herokuapp.com/'
 let developmentApiUrl = 'http://localhost:3000';
 
+
 module.ENVIRONMENT = {
 isProduction: /^(?!localhost|127)/.test(window.location.hostname),
 apiUrl: this.isProduction ? productionApiUrl:

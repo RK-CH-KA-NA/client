@@ -15,5 +15,7 @@
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:-->
 
+29 May 2018 - Completed index.js for back end.
+
 28 May 2018 - Initial Files Setup.
 
