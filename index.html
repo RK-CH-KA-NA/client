@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/icons.css">
   <!-- <link rel="stylesheet" href="styles/reset.css"> -->
-  <!--TEMPLATES-->
-
+  
   <!--Channel Item Template-->
   <script type="text/x-handlebars-template" id="channel-item-template">
     <div>
@@ -56,33 +55,36 @@
     <nav>
       <ul>
         <li>Home</li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>LogIn</li>
+        <li>About</li>
+        <li>Login</li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- <section class="error-view">
-      <h2>Sorry, something went wrong</h2>
-      <section id="error-message"></section>
-    </section> -->
 
-    <section class="channels container">
-      <h2 class="view-title">Channels</h2>
-      <section class="channel-list">
-        <ul id="channel-list"></ul>
+    <section id="home" class="container">
+      <h1>Home</h1>
+      <section id="content-creators">
       </section>
     </section>
 
-    <section class="playlist container">
-      <h2 class="view-title">Playlists</h2>
-      <section class="playlist-list">
-        <ul id="playlist-list"></ul>
-      </section>
+    <section id="playlists" class="container">
+        <h1>Playlists</h1>
     </section>
+
+    <section id="iframe" class="container">
+        <h1>Video</h1>
+    </section>
+
+    <section id="about-us" class="container">
+      <h1>About Us</h1>
+    </section>
+
+    <section id="error" class="container">
+      <h1>Error</h1>
+    </section>
+
   </main>
 
   <footer>
