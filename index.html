@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fellow[Code];</title>
+  <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/icons.css"> 
+  <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+  <!--TEMPLATES-->
+
+  <!--Error template-->
+  <script type="text/x-handlebars-template" id="error-template">
+    <h3>Something went wrong!</h3>
+    <p>{{status}}: {{statusText}}</p>
+  </script>
+  <!--Channel template--> 
+  <script type="text/x-handlebars-template" id="channel-template">
+    <li>
+        <img src={{thumbnail_url}}> 
+    </li>       
+  </script>
+  <!--Playlist template-->
+  <script type="text/x-handlebars-template" id="playlist-template">
+    <li>
+        <img src={{thumbnail_url}}> 
+    </li>       
+  </script>
+</head>
+<body>
+  <header>
+   <div class="header-content">
+    <h1>fellow[Code];</h1>
+    <div id="hamburger"></div>
+   </div>  
+   <nav>
+    <ul>
+      <li>Home</li>
+      <li><a href="about.html">About</a></li>
+      <li>LogIn</li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+      <section class="error-view">
+          <h2>Sorry, something went wrong</h2>
+          <section id="error-message"></section>
+        </section>
+
+        <section class="channels container">
+            <h2 class="view-title">Channels</h2>
+            <section class="channel-list">
+              <ul id="channel-list"></ul>
+            </section>
+          </section>
+
+          <section class="playlist container">
+              <h2 class="view-title">Playlists</h2>
+              <section class="playlist-list">
+                <ul id="playlist-list"></ul>
+              </section>
+            </section>
+  </main>
+
+  
+
+ <!--External CDN's--> 
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+
+<!--Inner links of JavaScript files-->
+
+
+</body>
+</html>
