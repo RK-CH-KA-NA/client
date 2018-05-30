@@ -24,13 +24,10 @@ var app = app || {};
   };
 
   Channels.loadAll = data => {
-    console.log(data);
     Channels.all = data.map(channelData => new Channels(channelData));
   };
 
 
-
-  
 
   module.Channels = Channels;
 })(app)

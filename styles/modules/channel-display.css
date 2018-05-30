@@ -1,19 +1,20 @@
-#channel {
+.channel {
   height: 80px;
   margin: 2em;
+  border: 1px solid grey;
 }
 
-#channel img {
+.channel:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.channel img {
   padding: .5em;
   width: 5em;
   border-radius: 50%;
 }
 
-#channel h3 {
-  line-height: 80px;
+.channel h3 {
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
-
-
 }

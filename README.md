@@ -21,4 +21,6 @@
 
 29 May 2018 5:50pm - Initial Structuring of channel-view
 
-30 Mat 2018 9:24am - Added content channels on main page
+30 May 2018 9:24am - Added content channels on main page
+
+30 May 2018 1:34pm - Began work on Playlist View
