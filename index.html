@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fellow[code];</title>
+  <title>code[fellow];</title>
   <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/modules/channel-display.css">
   <!-- <link rel="stylesheet" href="styles/reset.css"> -->
   
   <!--Channel Item Template-->
   <script type="text/x-handlebars-template" id="channel-item-template">
-    <div>
+    <section id="channel">
       <img src="{{image_url}}" id="{{channel_id}}">
-    </div>
-    <h3>{{title}}</h3>
-    <p>{{description}}</p>
+      <h3>{{title}}</h3>
+    </section>
   </script>
 
   <!--IFrame Template-->
@@ -49,7 +49,7 @@
 <body>
   <header>
     <div class="header-content">
-      <h1>fellow[code];</h1>
+      <h1>code[fellow];</h1>
       <div id="hamburger"></div>
     </div>
     <nav>
@@ -64,7 +64,6 @@
   <main>
 
     <section id="home" class="container">
-      <h1>Home</h1>
       <section id="content-creators">
       </section>
     </section>
@@ -104,7 +103,6 @@
 
   <!--Inner links of JavaScript files-->
   <script src="./scripts/index.js" type="text/javascript"></script>
-  <!-- <script src="./scripts/models/index.js" type="text/javascript"></script> -->
   <script src="./scripts/models/channels.js" type="text/javascript"></script>
   <script src="./scripts/models/playlists.js" type="text/javascript"></script>
   <script src="./scripts/views/channel-view.js" type="text/javascript"></script>
