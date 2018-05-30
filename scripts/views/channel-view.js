@@ -7,10 +7,10 @@ var app = app || {};
   const channelView = {};
 
   channelView.initIndexPage = function(ctx) {
+    $('#content-creators').empty();
     app.showOnly('#home');
+    app.Channels.all.forEach(channel => $('#content-creators').append(channel.toHtml()));
   }
-
-  
 
   module.channelView = channelView;
 })(app)

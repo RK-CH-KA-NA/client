@@ -1,0 +1,19 @@
+#channel {
+  height: 80px;
+  margin: 2em;
+}
+
+#channel img {
+  padding: .5em;
+  width: 5em;
+  border-radius: 50%;
+}
+
+#channel h3 {
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+
+
+}

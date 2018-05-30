@@ -20,3 +20,5 @@
 29 May 2018 3:45pm - Added Iframe, Playlist-item, and Channel-item templates
 
 29 May 2018 5:50pm - Initial Structuring of channel-view
+
+30 Mat 2018 9:24am - Added content channels on main page

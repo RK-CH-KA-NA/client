@@ -3,14 +3,30 @@
 var app = app || {};
 
 (function(module) {
-  Channels.all = [];
 
-  //Constructor
-  function Channels(data) {
-    Object.keys(data).forEach(key => this[key] = data[key]);
+  function Channels(channelData) {
+    Object.keys(channelData).forEach(key => this[key] = channelData[key]);
   };
 
-  
+  Channels.prototype.toHtml = function() {
+    return app.render('channel-item-template', this);
+  };
+
+  Channels.all = [];
+
+  Channels.fetchAll = (callback) => {
+    /**
+     * TODO - Make to Query database, not data file.
+     */
+    $.getJSON('./data/channels.json')
+      .then(data => Channels.loadAll(data))
+      .then(callback)
+  };
+
+  Channels.loadAll = data => {
+    console.log(data);
+    Channels.all = data.map(channelData => new Channels(channelData));
+  };
 
 
 
