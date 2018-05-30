@@ -1,0 +1,10 @@
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav:hover ul {
+  display: block;
+}
+

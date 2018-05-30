@@ -2,7 +2,9 @@
 
 
 page('/'
-  , (ctx, next) => app.Channels.fetchAll(() => app.channelView.initIndexPage(ctx, next))
+  , (ctx) => app.Channels.fetchAll(() => app.channelView.initIndexPage(ctx))
 );
 
-  page();
+page('/playlists/:channel_id', (ctx) => app.Playlists.fetchById((ctx) => app.playListView.initPlaylistView()));
+
+page();

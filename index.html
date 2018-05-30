@@ -14,8 +14,8 @@
   
   <!--Channel Item Template-->
   <script type="text/x-handlebars-template" id="channel-item-template">
-    <section id="channel">
-      <img src="{{image_url}}" id="{{channel_id}}">
+    <section class="channel">
+      <img src="{{image_url}}" data-id="{{channel_id}}">
       <h3>{{title}}</h3>
     </section>
   </script>
@@ -69,7 +69,7 @@
     </section>
 
     <section id="playlists" class="container">
-        <h1>Playlists</h1>
+
     </section>
 
     <section id="iframe" class="container">
@@ -102,8 +102,8 @@
 
 
   <!--Inner links of JavaScript files-->
-  <script src="./scripts/index.js" type="text/javascript"></script>
   <script src="./scripts/models/channels.js" type="text/javascript"></script>
+  <script src="./scripts/index.js" type="text/javascript"></script>
   <script src="./scripts/models/playlists.js" type="text/javascript"></script>
   <script src="./scripts/views/channel-view.js" type="text/javascript"></script>
   <script src="./scripts/views/routes.js" type="text/javascript"></script>
