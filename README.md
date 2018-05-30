@@ -19,3 +19,4 @@
 
 29 May 2018 3:45pm - Added Iframe, Playlist-item, and Channel-item templates
 
+29 May 2018 5:50pm - Initial Structuring of channel-view

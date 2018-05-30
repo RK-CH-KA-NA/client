@@ -1,23 +1,21 @@
 'use strict'
-page('/'
-  , (ctx, next) => app.Channel.fetchChannels(() => app.ChannelsView.initIndexPage(ctx, next))
-
-);
-
-page('/channels'
-  , (ctx, next) => app.Playlist.fetchPlaylists(() => app.PlaylistView.initIndexPage(ctx, next))
-
-);
-page('/channels/:playlist_id'
-  , 
-);
 
 
+page('/', (ctx) => {  app.channelView.initIndexPage(ctx);
+})
+// page('/channels'
+//   , (ctx, next) => app.Playlist.fetchPlaylists(() => app.PlaylistView.initIndexPage(ctx, next))
 
-page('/admin'
-  , () => app.adminView.initAdminPage()
-);
-page();
+// );
+// page('/channels/:playlist_id'
+//   , 
+// );
 
 
-page();
+
+// page('/admin'
+//   , () => app.adminView.initAdminPage()
+// );
+// page();
+
+  page();

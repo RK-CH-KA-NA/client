@@ -1,14 +1,16 @@
 'use strict';
+
+var app = app || {};
+
 (function(module){
 
-  var app = app || {};
+  const channelView = {};
 
-  const ChannelView = {};
-
-  ChanellView.initIndexPage = function(ctx) {
-    app.showOnly('home');
-    $('#content-ceators').empty();
+  channelView.initIndexPage = function(ctx) {
+    app.showOnly('#home');
   }
 
+  
 
+  module.channelView = channelView;
 })(app)

@@ -13,7 +13,7 @@ var app = app || {};
 
   module.showOnly = (selector) => {
     $('.container').hide();
-    $(`#${selector}`).show();
+    $(selector).show();
   };
 
   module.render = (templateId, data) => {
