@@ -20,17 +20,30 @@ nav ul{
   font-family: 'Cousine', monospace;
   text-align: center;
   font-size: 1em;
-  margin-top: 5%;
+  margin-top: 10%;
 
+}
+
+h2{
+  text-align: center;
+  margin-top: 10%;
 }
 
 img{
-  width: 30%;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
  
-
 }
+
+#images{
+  margin-top: 7%;
+}
+
 
 
 @media only screen and (min-width: 640px){
@@ -44,17 +57,31 @@ img{
     text-decoration-style: none;
   }
   
-  nav ul {
-    
-  }
-  
   .description{
     display: auto;
     font-family: 'Cousine', monospace;
     text-align: center;
     font-size: 1.5em;
-    margin-top: 5%;
+    margin-top: 10%;
   
+  }
+
+  img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    display: inline-block;
+    
+    
+  }
+
+  h2{
+    margin-top: 7%;
+  }
+
+  #images{
+    display: flex;
+    justify-content: center;
   }
 
 } 
