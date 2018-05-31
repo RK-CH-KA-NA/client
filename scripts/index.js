@@ -15,6 +15,10 @@ var app = app || {};
     $
     $('.container').hide();
     $(selector).show();
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+   
   };
 
   module.render = (templateId, data) => {
@@ -23,3 +27,5 @@ var app = app || {};
   };
 
 })(app);
+
+

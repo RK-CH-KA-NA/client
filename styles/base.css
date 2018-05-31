@@ -10,12 +10,10 @@ html {
 
 body {
   color: white;
-  font-family: 'Cousine', monospace;
 
 }
 
-h1{
-  font-size: 3em;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: white;
 }
-
