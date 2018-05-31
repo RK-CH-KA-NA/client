@@ -12,6 +12,7 @@ var app = app || {};
   };
 
   module.showOnly = (selector) => {
+    $
     $('.container').hide();
     $(selector).show();
   };
