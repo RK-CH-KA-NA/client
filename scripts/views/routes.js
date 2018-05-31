@@ -8,8 +8,6 @@ page('/channel/:channel_id'
 );
 
 page('/playlists/:playlist_id'
-  , (ctx, next) => app.Playlists.fetchPlaylist(ctx, next)
-  , ctx => app.iframeView.initIframeView(ctx)
-);
+  , (ctx, next) => app.iframeView.initIframeView(ctx));
 
 page();

@@ -22,6 +22,8 @@ var app = app || {};
   };
 
   module.render = (templateId, data) => {
+    console.log("ENTERED RENDER", data);
+    
     let template = Handlebars.compile($(`#${templateId}`).text());
     return template(data);
   };
