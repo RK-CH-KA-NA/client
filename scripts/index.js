@@ -2,7 +2,7 @@ var app = app || {};
 
 (function(module){
 
-  let productionApiUrl = 'insert cloud API server URL here';
+  let productionApiUrl = 'https://rk-ch-ka-na.github.io/client/';
   let developmentApiUrl = 'http://localhost:3000';
 
   module.isProduction= /^(?!localhost|127)/.test(window.location.hostname);
