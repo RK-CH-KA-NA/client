@@ -38,3 +38,29 @@ footer {
 
 }
 
+h1, h2{
+  text-align: center;
+  font-family: 'Cousine', monospace;
+
+}
+
+.description{
+  display: auto;
+  font-family: 'Cousine', monospace;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 10%;
+ 
+ }
+
+ .images{
+
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+} 
+
