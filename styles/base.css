@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   font-size: 16px;
 }
@@ -9,3 +10,17 @@ html {
   padding: 0;
   background-color: rgb(196, 196, 196);
 }
+=======
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Cousine', monospace;
+
+}
+
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+>>>>>>> bdae31f6fe8e97f2df6765a6594ff823e21236e4
