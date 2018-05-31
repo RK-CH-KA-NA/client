@@ -37,6 +37,9 @@ var app = app || {};
     });
   };
 
+  channelView.initAboutPage = function (ctx) {
+    app.showOnly('#about-us');}
+
   module.channelView = channelView;
 })(app)
 

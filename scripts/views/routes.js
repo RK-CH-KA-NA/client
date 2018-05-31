@@ -12,4 +12,6 @@ page('/playlists/:playlist_id'
   , ctx => app.iframeView.initIframeView(ctx)
 );
 
+page('/about', (ctx, next) => app.channelView.initAboutPage(ctx, next));
+
 page();
