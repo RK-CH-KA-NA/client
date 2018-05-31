@@ -29,11 +29,13 @@ main {
   clear: both;
 }
 
+
+
 footer {
   background-color: rgb(58, 58, 58);
   position: relative;
   margin-top: -180px;
   height: 180px;
   clear: both;
+ 
 }
-
