@@ -1,16 +1,14 @@
-<<<<<<< HEAD
+
 * {
   font-size: 16px;
 }
 
 html {
-  width: 35em;
-  margin: 0;
+  max-width: 35em;
   margin: auto;
-  padding: 0;
   background-color: rgb(196, 196, 196);
 }
-=======
+
 body {
   background-color: black;
   color: white;
@@ -23,4 +21,12 @@ h1{
   text-align: center;
 }
 
->>>>>>> bdae31f6fe8e97f2df6765a6594ff823e21236e4
+body {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

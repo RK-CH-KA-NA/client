@@ -15,22 +15,16 @@ var app = app || {};
   Channels.all = [];
 
   Channels.fetchAll = (callback) => {
-    /**
-     * TODO - Make to Query database, not data file.
-     */
-    $.getJSON('./data/channels.json')
-      .then(data => Channels.loadAll(data))
+    $.get(`${app.ENVIRONMENT.apiUrl}/api/v1/channels`)
+      .then(Channels.loadAll)
+      .catch(console.error)
       .then(callback)
+      .catch(console.error)
   };
 
   Channels.loadAll = data => {
-    console.log(data);
     Channels.all = data.map(channelData => new Channels(channelData));
   };
-
-
-
-  
 
   module.Channels = Channels;
 })(app)
