@@ -1,15 +1,25 @@
 .playlist {
-  margin: 1em;
-  padding-top: 1em;
+  margin: 1em;  
+}
+
+.playlist:hover {
+  background-color: rgb(50,50,50);
 }
 
 .playlist img {
   height: 4em;
   padding: .5em;
-  padding-bottom: 3em;
   float: left;
 }
 
 .playlist article {
   padding-top: 1em;
+}
+
+.playlist h4 {
+  font-weight: bold;
+}
+
+.playlist p {
+  font-size: 1em;
 }
