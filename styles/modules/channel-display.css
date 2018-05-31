@@ -1,0 +1,25 @@
+.channel {
+  margin: 2em;
+  height: 5em;
+  display: inline-block;
+  background-color: black;
+  border-radius: 5em;
+  border: 4px solid grey;
+}
+
+.channel img {
+  height: 5em;
+  border-radius: 50%;
+}
+
+.channel img:hover {
+  transform: scale(1.1, 1.1) rotate(-10deg);
+}
+
+.channel h3 {
+  padding: 0 1em 0 .5em;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 5em;
+  
+}

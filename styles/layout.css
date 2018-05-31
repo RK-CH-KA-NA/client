@@ -9,10 +9,8 @@ nav li {
   text-decoration-style: none;
 }
 
-nav ul{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+header {
+  color: white;
 }
 
 .description{
@@ -91,6 +89,21 @@ img{
 
 
 
+.container {
+  padding: 2em;
+}
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+footer {
+  background-color: rgb(58, 58, 58);
+  position: relative;
+  margin-top: -180px;
+  height: 180px;
+  clear: both;
+}
 
