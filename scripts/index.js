@@ -2,7 +2,7 @@ var app = app || {};
 
 (function(module){
 
-  let productionApiUrl = 'https://code-source.herokuapp.com/';
+  let productionApiUrl = 'https://code-source.herokuapp.com';
   let developmentApiUrl = 'http://localhost:3000';
 
   module.isProduction= /^(?!localhost|127)/.test(window.location.hostname);
