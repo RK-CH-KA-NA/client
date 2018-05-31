@@ -1,6 +1,6 @@
 'use strict'
 
-page('/', (ctx) => app.Channels.fetchAll(app.channelView.initIndexPage));
+page('/client', (ctx) => app.Channels.fetchAll(app.channelView.initIndexPage));
 
 page('/channel/:channel_id'
   , (ctx, next) => app.Playlists.fetchById(ctx, next)
