@@ -15,5 +15,14 @@
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:-->
 
-28 May 2018 - Initial Files Setup.
+28 May 2018 12:00pm - Initial Files Setup.
 
+29 May 2018 3:45pm - Added Iframe, Playlist-item, and Channel-item templates
+
+29 May 2018 5:50pm - Initial Structuring of channel-view
+
+30 May 2018 9:24am - Added content channels on main page
+
+30 May 2018 1:34pm - Began work on Playlist View
+
+30 May 2018 5:08pm - Playlist view styling

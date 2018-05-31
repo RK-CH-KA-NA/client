@@ -1,8 +1,42 @@
+header {
+  height: 6em;
+  background-color: rgb(58, 58, 58);
+}
+
+header {
+  color: white;
+}
+
+body {
+  background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0));
+}
+
+main {
+  padding-bottom: 12em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.container {
+  padding: 2em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
 
-
-
-
-
+footer {
+  background-color: rgb(58, 58, 58);
+  position: relative;
+  margin-top: -180px;
+  height: 180px;
+  clear: both;
+ 
+}
