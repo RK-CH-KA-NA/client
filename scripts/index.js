@@ -12,18 +12,17 @@ var app = app || {};
   };
 
   module.showOnly = (selector) => {
-    $
     $('.container').hide();
     $(selector).show();
-    $(document).ready(function () {
-      $(this).scrollTop(0);
+    $(this).scrollTop(0);
+    $("iframe").each(function() { 
+      var src= $(this).attr('src');
+      $(this).attr('src',src);  
     });
-   
+    
   };
 
-  module.render = (templateId, data) => {
-    console.log("ENTERED RENDER", data);
-    
+  module.render = (templateId, data) => {  
     let template = Handlebars.compile($(`#${templateId}`).text());
     return template(data);
   };

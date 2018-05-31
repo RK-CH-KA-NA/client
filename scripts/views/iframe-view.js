@@ -7,8 +7,6 @@ var app = app || {};
   const iframeView = {};
 
   iframeView.initIframeView = function(ctx) {
-    console.log(ctx.params.playlist_id);
-    console.log("INIT IFRAME!!!!");
     $('#iframe').empty();
     app.showOnly('#iframe');
     
