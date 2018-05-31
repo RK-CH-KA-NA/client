@@ -1,0 +1,15 @@
+.playlist {
+  margin: 1em;
+  padding-top: 1em;
+}
+
+.playlist img {
+  height: 4em;
+  padding: .5em;
+  padding-bottom: 3em;
+  float: left;
+}
+
+.playlist article {
+  padding-top: 1em;
+}

@@ -4,7 +4,7 @@
     "playlist_id":"PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a",
     "title": "React JS / Redux Tutorials",
     "image_url": "https://i.ytimg.com/vi/DiLVAXlVYR0/sddefault.jpg",
-    "description": "Official React JS / Redux tutorials from thenewboston!"
+    "description": "Official React JS / Redux tutorials from thenewboston!THis is a really long description. Too long for how I have this page designed.THIS IS GETTING RIDICULOUS. There is no need for this to be so long! One more line might do something cool. This is the line that went on too long"
   },
   {
     "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
@@ -14,7 +14,13 @@
     "description": "Official React JS / Redux tutorials from thenewboston!"
   },
   {
-    "channel_id":"UCwRXb5dUK4cvsd",
+    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
+    "playlist_id":"PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a",
+    "title": "React JS / Redux Tutorials",
+    "image_url": "https://i.ytimg.com/vi/DiLVAXlVYR0/sddefault.jpg",
+    "description": "Official React JS / Redux tutorials from thenewboston!"
+  },  {
+    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
     "playlist_id":"PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a",
     "title": "React JS / Redux Tutorials",
     "image_url": "https://i.ytimg.com/vi/DiLVAXlVYR0/sddefault.jpg",

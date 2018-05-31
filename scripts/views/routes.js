@@ -1,10 +1,10 @@
 'use strict'
 
+page('/', (ctx) => app.Channels.fetchAll(app.channelView.initIndexPage));
 
-page('/'
-  , (ctx) => app.Channels.fetchAll(() => app.channelView.initIndexPage(ctx))
+page('/playlists/:channel_id'
+  , (ctx, next) => app.Playlists.fetchById(ctx, next)
+  , ctx => app.playlistView.initPlaylistView(ctx)
 );
-
-page('/playlists/:channel_id', (ctx) => app.Playlists.fetchById((ctx) => app.playListView.initPlaylistView()));
 
 page();

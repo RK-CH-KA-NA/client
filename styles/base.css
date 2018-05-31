@@ -3,9 +3,16 @@
 }
 
 html {
-  width: 35em;
-  margin: 0;
+  max-width: 35em;
   margin: auto;
-  padding: 0;
   background-color: rgb(196, 196, 196);
+}
+
+body {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
