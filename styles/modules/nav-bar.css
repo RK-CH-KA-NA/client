@@ -1,23 +1,49 @@
+header {
+  margin-bottom: 2em;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content div {
+  display: inline-block;
+  margin: 1em;
+  border-radius: 2em;
+  background-color: rgb(104, 104, 104);
+}
+
+#logo {
+  width: 10em;
+  padding: 1em;
+}
+
 #icon-menu {
+  padding-top: 2em;
   padding: .4em;
 }
-nav li {
-  float: right;
-  padding: 1em;
-  border-radius: 2em;
 
+nav li {
+  display: none;
+  float: right;
+  border-radius: 2em;
+  padding: 1.2em;
 }
+
 nav ul{
   display: none;
-  height: 5em;
-  padding: 0;
-  background-color: rgb(58, 58, 58);
+  height: 3.5em;
+  background-color: rgb(40, 40, 40);
 }
 
 nav li:hover {
-  background-color: rgb(185, 19, 19);
+  background-color: rgb(104, 104, 104);
 }
 
 nav:hover ul {
+  display: block;
+}
+
+nav:hover li {
   display: block;
 }
