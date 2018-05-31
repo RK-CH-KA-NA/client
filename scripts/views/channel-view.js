@@ -12,7 +12,7 @@ var app = app || {};
     app.Channels.all.forEach(channel => $('#content-creators').append(channel.toHtml()));
 
     $('.channel img').on('click', function() {
-      page(`/playlists/${this.attributes['data-id'].value}`);
+      page(`/playlists/${this.attributes['channel-id'].value}`);
     });
   };
 
