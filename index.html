@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles/modules/nav-bar.css">
   <link rel="stylesheet" href="styles/modules/playlist-display.css">
   <link rel="stylesheet" href="styles/modules/iframe-display.css">
-  
+
   <!--Channel Item Template-->
   <script type="text/x-handlebars-template" id="channel-item-template">
     <section class="channel" data-id="{{id}}">
@@ -22,14 +22,14 @@
       <h3>{{title}}</h3>
     </section>
   </script>
-
+  
   <!--Playlist Item Template-->
   <script type="text/x-handlebars-template" id="playlistItem-template">
     <section class="playlist clearfix" data-id="{{id}}">
       <img src="{{url}}"/>
       <article>
         <h4>{{title}}</h4>
-        <p>{{{description}}}</p>
+        <hr>
       </article>
     </section>
   </script>
@@ -37,7 +37,9 @@
   <!--IFrame Template-->
   <script type="text/x-handlebars-template" id="iframe-template">
     <section class="iframe">
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/{{videoId}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="videowrapper">
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/{{videoId}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
       <p>{{{description}}}</p>
     </section>
   </script>
@@ -53,14 +55,20 @@
 <body class="clearfix">
   <header>
     <div class="header-content">
-      <h1>code[source];</h1>
+      <div>
+        <img src="./images/logo-large.png" id="logo">
+      </div>
     </div>
     <nav>
-      <div id="icon-menu" class="pull-right"><img src="http://via.placeholder.com/40x40"></div>
+      <div id="icon-menu" class="pull-right">
+        <img src="./images/menu.png">
+      </div>
       <ul>
         <li>Login</li>
         <li>About</li>
-        <li><a href='/'>Home</a></li>
+        <li>
+          <a href='/'>Home</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -102,4 +110,5 @@
   <script src="./scripts/views/iframe-view.js" type="text/javascript"></script>
   <script src="./scripts/views/routes.js" type="text/javascript"></script>
 </body>
+
 </html>
