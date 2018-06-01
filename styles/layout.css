@@ -1,14 +1,11 @@
-header {
-  height: 6em;
-  background-color: rgb(58, 58, 58);
+body {
+  background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0));
 }
 
 header {
   color: white;
-}
-
-body {
-  background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0));
+  height: 6em;
+  background-color: rgb(58, 58, 58);
 }
 
 main {
@@ -19,8 +16,12 @@ main {
   float: right;
 }
 
+.pull-left {
+  float: left;
+}
+
 .container {
-  padding: 2em;
+  padding: 1em;
 }
 
 .clearfix::after {
@@ -28,53 +29,3 @@ main {
   display: table;
   clear: both;
 }
-
-h1,h2{
-  text-align: center;
-  font-family: 'Cousine', monospace;
-}
-
-h2{
-  margin-top:7%;
-  margin-bottom: 7%;
-  font-size: 1.5em;
-}
-
-.description{
-  display: auto;
-  font-family: 'Cousine', monospace;
-  text-align: center;
-  font-size: 1em;
-  margin-top: 10%;
-}
-
-#images{
-  width: 40%;
-  width: 40%;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3%;
-}
-
-
-footer {
-  background-color: rgb(58, 58, 58);
-  position: relative;
-  margin-top: -180px;
-  height: 180px;
-  clear: both;
- 
-}
-
-footer li{
-  display: inline-block;
-  margin-left: 2em;
-}
-
-ul{
-  text-align: center;
-  padding-top: 5em;
-}
-

@@ -7,12 +7,10 @@ var app = app || {};
   const iframeView = {};
 
   iframeView.initIframeView = function(ctx) {
-    $('#iframe').empty();
-    app.showOnly('#iframe');
-    
+    $('#home').empty();
+    app.showOnly('#home');
     let filledIframe = app.render('iframe-template', {'id': ctx.params.playlist_id});
-
-    $('#iframe').append(filledIframe);
+    $('#home').append(filledIframe);
   };
 
   module.iframeView = iframeView;

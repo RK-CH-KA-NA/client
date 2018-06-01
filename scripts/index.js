@@ -19,7 +19,6 @@ var app = app || {};
       var src= $(this).attr('src');
       $(this).attr('src',src);  
     });
-    
   };
 
   module.render = (templateId, data) => {  

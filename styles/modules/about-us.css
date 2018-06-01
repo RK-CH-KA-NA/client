@@ -1,0 +1,23 @@
+.description {
+  background-color: rgba(170, 170, 170, 0.2);
+  font-size: 1.5em;
+  padding: 1em;
+  border-radius: .5em;
+  text-indent: 2em;
+}
+
+.description p {
+  padding: 1em;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+#images img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}

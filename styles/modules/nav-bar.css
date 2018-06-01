@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .header-content {
@@ -10,7 +10,7 @@ header {
   display: inline-block;
   margin: 1em;
   border-radius: 2em;
-  background-color: rgb(104, 104, 104);
+  background-color: rgba(78, 78, 78);
 }
 
 #logo {
@@ -26,7 +26,7 @@ header {
 nav li {
   display: none;
   float: right;
-  border-radius: 2em;
+  border-radius: 1em;
   padding: 1.2em;
 }
 
@@ -37,7 +37,7 @@ nav ul{
 }
 
 nav li:hover {
-  background-color: rgb(104, 104, 104);
+  background-color: rgb(78, 78, 78);
 }
 
 nav:hover ul {

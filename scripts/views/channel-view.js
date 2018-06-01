@@ -7,9 +7,9 @@ var app = app || {};
   const channelView = {};
   
   channelView.initIndexPage = function(ctx) {
-    $('#content-creators').empty();
+    $('#home').empty();
     app.showOnly('#home');
-    app.Channels.all.forEach(channel => $('#content-creators').append(channel.toHtml()));
+    app.Channels.all.forEach(channel => $('#home').append(channel.toHtml()));
 
     $('.channel').on('click', function() {
       page(`/channel/${ $(this).attr('data-id') }`);
