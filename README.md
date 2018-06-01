@@ -6,7 +6,8 @@
 ## Overview
 
 This is a web app that provides a collection of programming tutorials for different programming languages, such as: JavaScript,
-Java, Python, C++. It also has 
+Java, Python, C++. 
+It also has tutorials for development tools in general, for all programming levels.
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
@@ -25,14 +26,17 @@ Java, Python, C++. It also has
 - Express
 - AJAX
 - Node JS
+- API
 
 ## Credits and Collaborations
+#### Credits to all channel/video content creators in YouTube.
 
 - Icomoon for the icons
 - JQuery library
 - Handlebars for templating
 - CodeFellows .eslintrc
 - MIT license
+- Youtube API
 
 
 
