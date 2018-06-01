@@ -1,0 +1,44 @@
+#dropdown-menu{
+  position: rlative;
+  margin: 0;
+  padding: 0;
+  width: 6.95rem;;
+  background-color: grey ;
+  margin-left: 2em;
+  text-align: center;
+  display: none;
+  /* transform: perspective(1000px) rotateX(-90deg) */
+}
+
+/* ul.active{
+  transform: perspective(1000px) rotateX(0deg)
+} */
+
+#drpd{
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  
+}
+
+#drpd:hover{
+  background-color:rgb(129, 112, 112) ;
+}
+
+.menu-button{
+  position: relative;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: grey;
+  margin-left: 2em;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+ 
+}
+
+/* #dropdown-menu #drpd a{
+  padding: 10%;
+} */
+
