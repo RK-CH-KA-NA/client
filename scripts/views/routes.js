@@ -10,4 +10,6 @@ page('/channel/:channel_id'
 page('/playlists/:playlist_id'
   , (ctx, next) => app.iframeView.initIframeView(ctx));
 
+page('/about', (ctx, next) => app.channelView.initAboutPage(ctx, next));
+
 page();
