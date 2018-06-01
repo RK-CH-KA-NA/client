@@ -4,7 +4,7 @@
 **Version**: 1.1.0 
 
 ## Overview
-###code[source];
+### code[source];
 
 This is a web app that provides a collection of programming tutorials for different programming languages, such as: JavaScript,
 Java, Python, C++. It also has 
@@ -13,7 +13,7 @@ Java, Python, C++. It also has
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-###Technologies used:
+### Technologies used:
 
 - HTML/5
 - CSS3
