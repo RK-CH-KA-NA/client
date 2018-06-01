@@ -55,8 +55,8 @@
 <body class="clearfix">
   <header>
     <div class="header-content">
-      <div>
-        <img src="./imgs/logo-large.png" id="logo">
+      <div id="logo">
+        <img id="logo-img" src="./imgs/logo-large.png">
       </div>
     </div>
     <nav>
@@ -65,7 +65,7 @@
       </div>
       <ul>
         <li>
-          <a href=/login>Login</a>
+          <a href=/admin>Admin</a>
         </li>
         <li>
           <a href="/about">About</a>
@@ -103,6 +103,15 @@
       </div>
     </section>
 
+    <section id="admin" class="container" style="display: none">
+      <form id="new-playlist-form">
+        <input id="playlistField" type="text" name="playlist_id" placeholder="Playlist ID">
+        <div class="icon-plus"></div> 
+        <div class="icon-minus"></div> 
+      </form>
+
+    </section>
+
     <section id="error" class="container">
     </section>
   </main>
@@ -110,15 +119,16 @@
   <footer>
     <ul>
       <li>
-        <span class="icon-linkedin"></span>
+        <a class="icon-linkedin"></a>
       </li>
       <li>
-        <span class="icon-github"></span>
+        <a class="icon-github"></a>
       </li>
       <li>
-        <span class="icon-embed2"></span>
+          <a class="icon-youtube"></a>
       </li>
     </ul>
+    <p>RK-CH-KA-NA 2018</p>
   </footer>
 
   <!--External CDN's-->
@@ -132,6 +142,7 @@
   <script src="./scripts/index.js" type="text/javascript"></script>
   <script src="./scripts/views/playlist-view.js" type="text/javascript"></script>
   <script src="./scripts/views/channel-view.js" type="text/javascript"></script>
+  <script src="./scripts/views/admin-view.js" type="text/javascript"></script>
   <script src="./scripts/views/iframe-view.js" type="text/javascript"></script>
   <script src="./scripts/views/routes.js" type="text/javascript"></script>
 </body>

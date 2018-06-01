@@ -13,7 +13,7 @@ header {
   background-color: rgba(78, 78, 78);
 }
 
-#logo {
+#logo-img {
   width: 10em;
   padding: 1em;
 }
@@ -26,8 +26,13 @@ header {
 nav li {
   display: none;
   float: right;
-  border-radius: 1em;
-  padding: 1.2em;
+  padding: 1em;
+}
+
+nav li a {
+  color: rgb(80, 80, 80);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav ul{
@@ -36,8 +41,8 @@ nav ul{
   background-color: rgb(40, 40, 40);
 }
 
-nav li:hover {
-  background-color: rgb(78, 78, 78);
+nav li:hover a{
+  color: rgb(126, 126, 126)
 }
 
 nav:hover ul {

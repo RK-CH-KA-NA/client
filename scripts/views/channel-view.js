@@ -14,6 +14,10 @@ var app = app || {};
     $('.channel').on('click', function() {
       page(`/channel/${ $(this).attr('data-id') }`);
     });
+
+    $('#logo').on('click', function(){
+      page('/');
+    });
   };
 
   channelView.initAboutPage = function (ctx) {

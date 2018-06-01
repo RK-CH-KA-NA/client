@@ -20,13 +20,24 @@ var app = app || {};
       .then(next)
       .catch(console.error);
   };
+
+  Playlists.addNew = (ctx) => {
+    $.ajax({
+      url: `${app.ENVIRONMENT.apiUrl}/api/v1/addNew/${ctx.params.playlist_id}`,
+      method: 'POST'
+    })
+    .then(() => app.Channels.fetchAll(app.channelView.initIndexPage))
+    .catch(console.error);
+  }
     
-  // Playlists.fetchPlaylist = (ctx, next) => {
-  //   $.get(`${app.ENVIRONMENT.apiUrl}/api/v1/playlists/${ctx.params.playlist_id}`)
-  //     .then(app.Video.loadVideos)
-  //     .then(next)
-  //     .catch(console.error)
-  // };
+  Playlists.removePlaylist = (ctx) => {
+    $.ajax({
+      url: `${app.ENVIRONMENT.apiUrl}/api/v1/delete/${ctx.params.playlist_id}`,
+      method: 'DELETE'
+    })
+    .then(() => app.Channels.fetchAll(app.channelView.initIndexPage))
+    .catch(console.error);
+  };
   
   Playlists.loadPlaylists = (listData) => {
     app.Playlists.all = listData.map(playlistData => new Playlists(playlistData));
