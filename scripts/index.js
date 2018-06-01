@@ -13,7 +13,7 @@ var app = app || {};
 
   module.showOnly = (selector) => {
     $('.container').hide();
-    $('#playlistField').value = '';
+    
     $(selector).show();
     $(this).scrollTop(0);
     $("iframe").each(function() { 

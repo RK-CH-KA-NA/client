@@ -21,21 +21,23 @@ var app = app || {};
       .catch(console.error);
   };
 
-  Playlists.addNew = (ctx) => {
+  Playlists.addNew = (ctx, next) => {
     $.ajax({
       url: `${app.ENVIRONMENT.apiUrl}/api/v1/addNew/${ctx.params.playlist_id}`,
       method: 'POST'
     })
-    .then(() => app.Channels.fetchAll(app.channelView.initIndexPage))
+    .then(response => console.log(response))
+    .then(next)
     .catch(console.error);
   }
     
-  Playlists.removePlaylist = (ctx) => {
+  Playlists.removePlaylist = (ctx, next) => {
     $.ajax({
       url: `${app.ENVIRONMENT.apiUrl}/api/v1/delete/${ctx.params.playlist_id}`,
       method: 'DELETE'
     })
-    .then(() => app.Channels.fetchAll(app.channelView.initIndexPage))
+    .then(response => console.log(response))
+    .then(next)
     .catch(console.error);
   };
   
