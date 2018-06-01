@@ -1,0 +1,32 @@
+footer {
+  background-color: rgb(58, 58, 58);
+  margin-top: -180px;
+  height: 180px;
+  clear: both;
+  font-size: 3em;
+  color: rgb(80, 80, 80);
+}
+
+footer a{
+  color: rgb(80, 80, 80);
+}
+
+footer ul {
+  width: 7em;
+  margin: auto;
+}
+
+footer li{
+  display: inline-block;
+  padding: 1.7em .5em .25em .5em;
+}
+
+footer p {
+  font-size: .35em;
+  width: 10em;
+  margin: auto;
+}
+
+footer li:hover a{
+  color: rgb(100, 100, 100);
+}

@@ -1,5 +1,6 @@
 .playlist {
-  margin: 1em;  
+
+  padding: 2em;
 }
 
 .playlist:hover {
@@ -7,7 +8,7 @@
 }
 
 .playlist img {
-  height: 4em;
+  height: 5em;
   padding: .5em;
   float: left;
 }

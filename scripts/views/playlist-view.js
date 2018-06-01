@@ -7,10 +7,9 @@ var app = app || {};
   const playlistView = {};
 
   playlistView.initPlaylistView = function() {
-    $('#playlists').empty();
-    app.showOnly('#playlists');
-    app.Playlists.all.forEach(pl => $('#playlists').append(pl.toHtml()));
-    
+    $('#home').empty();
+    app.showOnly('#home');
+    app.Playlists.all.forEach(pl => $('#home').append(pl.toHtml()));
     $('.playlist').on('click', function() {
       page(`/playlists/${ $(this).attr('data-id') }`);
     });
