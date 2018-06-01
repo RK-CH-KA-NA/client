@@ -1,0 +1,25 @@
+
+#admin input {
+  margin: auto;
+  display: block;
+  border: none;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-plus, .icon-minus {
+  font-size: 2em;
+  display: inline-block;
+  padding: .5em;
+  border-radius: 1em;
+  margin: .25em;
+  background-color: rgb(80, 80, 80);
+}
+
+#buttons div:hover {
+  background-color: rgb(120, 120, 120);
+}
+

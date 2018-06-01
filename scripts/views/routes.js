@@ -13,9 +13,13 @@ page('/about', (ctx, next) => app.channelView.initAboutPage(ctx, next));
 
 page('/admin', (ctx) => app.adminView.initAdminPage(ctx));
 
-page(`/addNew/:playlist_id`, (ctx) => app.Playlists.addNew(ctx));
+page(`/addNew/:playlist_id`
+  , (ctx, next) => app.Playlists.addNew(ctx, next)
+  , (ctx) => app.Channels.fetchAll(app.channelView.initIndexPage));
 
-page('/delete/:playlist_id', (ctx) => app.Playlists.removePlaylist(ctx));
+page('/delete/:playlist_id'
+  , (ctx, next) => app.Playlists.removePlaylist(ctx, next)
+  , (ctx) => app.Channels.fetchAll(app.channelView.initIndexPage));
 
 
 page();
