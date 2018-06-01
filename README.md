@@ -1,10 +1,9 @@
-# 301 Final Project
+# code[source];
 
 **Author**: Karina Amador, Roman Kireev, Nate Aurich, Christopher Hemenes
 **Version**: 1.1.0 
 
 ## Overview
-### code[source];
 
 This is a web app that provides a collection of programming tutorials for different programming languages, such as: JavaScript,
 Java, Python, C++. It also has 
