@@ -27,6 +27,7 @@ It also has tutorials for development tools in general, for all programming leve
 - AJAX
 - Node JS
 - API
+- page.js
 
 ## Credits and Collaborations
 #### Credits to all channel/video content creators in YouTube.
@@ -37,6 +38,7 @@ It also has tutorials for development tools in general, for all programming leve
 - CodeFellows .eslintrc
 - MIT license
 - Youtube API
+- PostgreSQL
 
 
 
@@ -55,3 +57,5 @@ It also has tutorials for development tools in general, for all programming leve
 30 May 2018 1:34pm - Began work on Playlist View
 
 30 May 2018 5:08pm - Playlist view styling
+
+31 May 2018 8:00pm - Admin page included.
