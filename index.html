@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>code[source];</title>
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/51d687ce52/UntitledProject/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/modules/channel-display.css">
+  <link rel="stylesheet" href="styles/modules/nav-bar.css">
+  <link rel="stylesheet" href="styles/modules/playlist-display.css">
+  <link rel="stylesheet" href="styles/modules/iframe-display.css">
+
+  <!--Channel Item Template-->
+  <script type="text/x-handlebars-template" id="channel-item-template">
+    <section class="channel" data-id="{{id}}">
+      <img src="{{url}}">
+      <h3>{{title}}</h3>
+    </section>
+  </script>
+  
+  <!--Playlist Item Template-->
+  <script type="text/x-handlebars-template" id="playlistItem-template">
+    <section class="playlist clearfix" data-id="{{id}}">
+      <img src="{{url}}"/>
+      <article>
+        <h4>{{title}}</h4>
+        <hr>
+      </article>
+    </section>
+  </script>
+
+  <!--IFrame Template-->
+  <script type="text/x-handlebars-template" id="iframe-template">
+    <section class="iframe">
+      <div class="videowrapper">
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/?listtype=playlist&list={{id}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
+  </script>
+
+  <!--Error template-->
+  <script type="text/x-handlebars-template" id="error-template">
+    <h3>Something went wrong!</h3>
+    <p>{{status}}: {{statusText}}</p>
+  </script>
+
+</head>
+
+<body class="clearfix">
+  <header>
+    <div class="header-content">
+      <div>
+        <img src="./imgs/logo-large.png" id="logo">
+      </div>
+    </div>
+    <nav>
+      <div id="icon-menu" class="pull-right">
+        <img src="./imgs/menu.png">
+      </div>
+      <ul>
+        <li>Login</li>
+        <li><a href="/about">About</a></li>
+        <li>
+          <a href='/'>Home</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="container">
+      <section id="content-creators">
+      </section>
+    </section>
+
+    <section id="playlists" class="container">
+    </section>
+
+
+    <section id="iframe" class="container">
+    </section>
+
+    <section id="about-us" class="container">
+        <h1>About</h1>
+        <div class="description"></div>
+        <p>This proyect is about a collection</p>
+        <p>of programming tutorials from YouTube.</p>
+        <p>The topics covered vary from different</p>
+        <p>programming languages to libraries, packages,</p>
+        <p>machine learning, back and front and developer</p>
+        <p>tools.</p>
+      </div>
+      <h2>Creators</h2>
+      <div id="images"></div>
+      <img src="imgs/nate.jpg">
+      <img src="imgs/karina.jpg">
+      <img src="imgs/roman.jpg">
+      <img src="imgs/chris.jpg"> 
+    </div>
+    </section>
+
+
+    <section id="error" class="container">
+    </section>
+        
+  </main>
+<footer>
+  <ul>
+      <li><span class="icon-linkedin"></span></li>
+      <li ><span class="icon-github"></span></li>
+      <li ><span class="icon-embed2"></span></li>
+  </ul>
+</footer>
+  
+
+  <!--External CDN's-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+  <!--Inner links of JavaScript files-->
+  <script src="./scripts/models/channels.js" type="text/javascript"></script>
+  <script src="./scripts/models/playlists.js" type="text/javascript"></script>
+  <!-- <script src="./scripts/models/videos.js" type="text/javascript"></script> -->
+  <script src="./scripts/index.js" type="text/javascript"></script>
+  <script src="./scripts/views/playlist-view.js" type="text/javascript"></script>
+  <script src="./scripts/views/channel-view.js" type="text/javascript"></script>
+  <script src="./scripts/views/iframe-view.js" type="text/javascript"></script>
+  <script src="./scripts/views/routes.js" type="text/javascript"></script>
+</body>
+
+</html>
