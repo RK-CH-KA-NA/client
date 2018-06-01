@@ -29,6 +29,34 @@ main {
   clear: both;
 }
 
+h1,h2{
+  text-align: center;
+  font-family: 'Cousine', monospace;
+}
+
+h2{
+  margin-top:7%;
+  margin-bottom: 7%;
+  font-size: 1.5em;
+}
+
+.description{
+  display: auto;
+  font-family: 'Cousine', monospace;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 10%;
+}
+
+#images{
+  width: 40%;
+  width: 40%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
 
 
 footer {
@@ -39,3 +67,14 @@ footer {
   clear: both;
  
 }
+
+footer li{
+  display: inline-block;
+  margin-left: 2em;
+}
+
+ul{
+  text-align: center;
+  padding-top: 5em;
+}
+

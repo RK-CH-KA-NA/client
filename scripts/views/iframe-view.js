@@ -6,10 +6,13 @@ var app = app || {};
 
   const iframeView = {};
 
-  iframeView.initIframeView = function() {
+  iframeView.initIframeView = function(ctx) {
     $('#iframe').empty();
     app.showOnly('#iframe');
-    $('#iframe').append(app.Video.all[0].toHtml());
+    
+    let filledIframe = app.render('iframe-template', {'id': ctx.params.playlist_id});
+
+    $('#iframe').append(filledIframe);
   };
 
   module.iframeView = iframeView;

@@ -2,7 +2,7 @@ var app = app || {};
 
 (function(module){
 
-  let productionApiUrl = 'insert cloud API server URL here';
+  let productionApiUrl = 'https://code-source.herokuapp.com';
   let developmentApiUrl = 'http://localhost:3000';
 
   module.isProduction= /^(?!localhost|127)/.test(window.location.hostname);
@@ -12,16 +12,17 @@ var app = app || {};
   };
 
   module.showOnly = (selector) => {
-    $
     $('.container').hide();
     $(selector).show();
-    $(document).ready(function () {
-      $(this).scrollTop(0);
+    $(this).scrollTop(0);
+    $("iframe").each(function() { 
+      var src= $(this).attr('src');
+      $(this).attr('src',src);  
     });
-   
+    
   };
 
-  module.render = (templateId, data) => {
+  module.render = (templateId, data) => {  
     let template = Handlebars.compile($(`#${templateId}`).text());
     return template(data);
   };
