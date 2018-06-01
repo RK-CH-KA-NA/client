@@ -4,13 +4,39 @@
 **Version**: 1.1.0 
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+###code[source];
+
+This is a web app that provides a collection of programming tutorials for different programming languages, such as: JavaScript,
+Java, Python, C++. It also has 
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+###Technologies used:
+
+- HTML/5
+- CSS3
+- JavaScript
+- jQuery
+- HandleBars
+- Heroku
+- GitHub
+- SQL
+- Express
+- AJAX
+- Node JS
+
+## Credits and Collaborations
+
+- Icomoon for the icons
+- JQuery library
+- Handlebars for templating
+- CodeFellows .eslintrc
+- MIT license
+
+
+
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:-->
